@@ -11,9 +11,9 @@ ________________________________________
 -	Produce a structured incident-style report
 ________________________________________
 ##  3. Lab Environment
-- ### 3.1 Virtualization Platform
+### 3.1 Virtualization Platform
   - Hypervisor: VMware Workstation
-- ### 3.2 Virtual Machines
+### 3.2 Virtual Machines
   -  kali 1 (attacker - 192.168.36.128)
   -  kali 2 (Cowrie Honeyot Server - 192.168.36.130)
 
