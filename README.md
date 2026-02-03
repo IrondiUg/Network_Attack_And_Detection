@@ -27,21 +27,21 @@ ________________________________________
 ## 4. Cowrie Honeypot Overview
 Cowrie is a medium-interaction SSH and Telnet honeypot designed to emulate a vulnerable Linux system. It accepts all usernames and passwords by design, allowing attackers to proceed into a simulated shell environment. All interactions are logged for analysis.
 Key features used in this project:
-•	Fake SSH service emulation
-•	Credential capture
-•	Command logging
-•	Simulated filesystem
+-	Fake SSH service emulation
+-	Credential capture
+-	Command logging
+-	Simulated filesystem
 ________________________________________
-5. Installation & Configuration Summary
-5.1 Cowrie Deployment
-•	Cowrie was installed from the official GitHub repository. https://github.com/cowrie/cowrie
-•	A Python virtual environment was used to isolate dependencies.
-•	Required Python packages were installed using pip.
-•	Cowrie services were started using the built-in launcher.
-5.2 SSH Configuration
-•	Cowrie was configured to emulate an SSH server on port 2222. A realistic SSH banner was used to mimic a vulnerable OpenSSH version.
-•	Root and other common usernames were accepted to simulate misconfiguration.
-5.3 Filesystem Customization
+## 5. Installation & Configuration Summary
+### 5.1 Cowrie Deployment
+-	Cowrie was installed from the official GitHub repository. https://github.com/cowrie/cowrie
+-	A Python virtual environment was used to isolate dependencies.
+-	Required Python packages were installed using pip.
+-	Cowrie services were started using the built-in launcher.
+### 5.2 SSH Configuration
+-	Cowrie was configured to emulate an SSH server on port 2222. A realistic SSH banner was used to mimic a vulnerable OpenSSH version.
+-	Root and other common usernames were accepted to simulate misconfiguration.
+### 5.3 Filesystem Customization
 The fake filesystem presented to attackers was customized to increase realism:
 •	Simulated directories such as /root, /etc, and /var
 •	Fake sensitive files (e.g., password lists, backup files)
