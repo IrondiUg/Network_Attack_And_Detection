@@ -66,13 +66,18 @@ This access was fully simulated and did not grant real system privileges; howeve
 ![Screenshot 2026-02-03 122406](https://github.com/user-attachments/assets/048d4774-1693-47ac-893c-0e6c294bb9de)
 
 ________________________________________
-7. Traffic Capture with Wireshark
+## 7. Traffic Capture with Wireshark
 Wireshark was deployed to monitor network traffic between the attacker VM and the Cowrie honeypot during the reconnaissance and access phases.
 While Nmap scans and SSH connections were performed, Wireshark captured:
-•	TCP connection attempts to the SSH port
-•	SSH handshake and session traffic
-•	Evidence of successful connection establishment from the attacker VM
+-	TCP connection attempts to the SSH port
+-	SSH handshake and session traffic
+-	Evidence of successful connection establishment from the attacker VM
 The packet capture confirmed that network-level communication occurred prior to and during the simulated compromise, demonstrating how attackers gain access following service discovery.
+
+![Screenshot 2026-02-03 113156](https://github.com/user-attachments/assets/57ba49b7-2470-4747-be95-c90e17496f75)
+
+![Screenshot 2026-02-03 113646](https://github.com/user-attachments/assets/9c65d7a3-0145-4cbd-9697-42285a348fd9)
+
 The captured traffic served as supporting evidence alongside Cowrie logs, providing visibility at both the network and application layers.
 ________________________________________
 8. Log Analysis & Evidence
