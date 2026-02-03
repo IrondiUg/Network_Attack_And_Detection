@@ -11,18 +11,20 @@ ________________________________________
 -	Produce a structured incident-style report
 ________________________________________
 ##  3. Lab Environment
-- 3.1 Virtualization Platform
+- ### 3.1 Virtualization Platform
   - Hypervisor: VMware Workstation
-- 3.2 Virtual Machines - kali 1(attacker - 192.168.36.128) and kali 2(Cowrie Honeyot Server - 192.168.36.130)
+- 3.2 Virtual Machines
+  -  kali 1 (attacker - 192.168.36.128)
+  -  kali 2 (Cowrie Honeyot Server - 192.168.36.130)
 
 Attacker VM	Kali Linux	Performs scanning and attack simulations
 Honeypot VM	Kali Linux + Cowrie	Hosts the Cowrie SSH honeypot
-Note: Although Cowrie is commonly deployed on Ubuntu Server, Kali Linux was used successfully in this controlled lab for learning and demonstration purposes.
+
 3.3 Network Configuration
-•	Network Mode: Host-Only / NAT (isolated virtual network)
-•	This ensured both VMs could communicate with each other while remaining isolated from external networks.
+-	Network Mode:NAT (isolated virtual network)
+-	This ensured both VMs could communicate with each other while remaining isolated from external networks.
 ________________________________________
-4. Cowrie Honeypot Overview
+## 4. Cowrie Honeypot Overview
 Cowrie is a medium-interaction SSH and Telnet honeypot designed to emulate a vulnerable Linux system. It accepts all usernames and passwords by design, allowing attackers to proceed into a simulated shell environment. All interactions are logged for analysis.
 Key features used in this project:
 •	Fake SSH service emulation
