@@ -55,12 +55,16 @@ Typical scan types included:
 •	Basic TCP scan to identify open ports
 •	Service version detection to enumerate SSH details
 The discovery of the open SSH port informed the next phase of the attack, which involved direct SSH connection attempts to the honeypot.
+
 ![Screenshot 2026-02-03 110743](https://github.com/user-attachments/assets/c73c8e98-3471-400c-a838-b97da4aa7846)
 
-6.2 SSH Login Attempts and Access Simulation
+## 6.2 SSH Login Attempts and Access Simulation
 After identifying the open SSH port using Nmap, the attacker VM initiated an SSH connection to the Cowrie honeypot using the discovered IP address.
 Multiple login attempts were performed using common usernames and passwords. Cowrie accepted the credentials and provided a simulated shell environment, creating the appearance that the attacker machine had successfully gained access to the server.
 This access was fully simulated and did not grant real system privileges; however, it allowed Cowrie to log authentication attempts and attacker commands for analysis.
+
+![Screenshot 2026-02-03 122406](https://github.com/user-attachments/assets/048d4774-1693-47ac-893c-0e6c294bb9de)
+
 ________________________________________
 7. Traffic Capture with Wireshark
 Wireshark was deployed to monitor network traffic between the attacker VM and the Cowrie honeypot during the reconnaissance and access phases.
