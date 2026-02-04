@@ -15,7 +15,7 @@ ________________________________________
   - Hypervisor: VMware Workstation
 ### 3.2 Virtual Machines
   -  kali 1 (attacker - 192.168.36.128)
-  -  kali 2 (Cowrie Honeyot Server - 192.168.36.130)
+  -  kali 2 (Cowrie Honeypot Server - 192.168.36.130)
 
 Attacker VM	Kali Linux	Performs scanning and attack simulations
 Honeypot VM	Kali Linux + Cowrie	Hosts the Cowrie SSH honeypot
