@@ -7,7 +7,7 @@ ________________________________________
 -	Simulate network reconnaissance and unauthorized access attempts
 -	Capture and analyze network traffic generated during attacks
 -	Review and interpret honeypot logs as evidence of malicious activity
--	Produce a structured incident-style report
+-	Produce a structured incident report
 ________________________________________
 ##  3. Lab Environment
 ### 3.1 Virtualization Platform
