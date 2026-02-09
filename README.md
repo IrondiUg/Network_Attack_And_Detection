@@ -33,6 +33,7 @@ ________________________________________
 -	A Python virtual environment was used to isolate dependencies.
 -	Required Python packages were installed using pip.
 -	Cowrie services were started using the built-in launcher.
+
 Follow the steps in this video to set up Cowrie honeypot 👉🏾 https://youtu.be/-ufsdzLr5Oc?si=BbEQvEAqsc9KqL3U
 
 ### 5.2 SSH Configuration
